@@ -1,5 +1,5 @@
 {
-    "name": "kinaryatama/SendangKwanen",
+    "name": "kinaryatama/sendang-kwanen",
     "type": "project",
     "description": "Sendang Kwanen Tirta Kinarya",
     "keywords": [
@@ -13,7 +13,8 @@
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^6.3.1|^7.0.1",
         "laravel/framework": "^7.29",
-        "laravel/tinker": "^2.5"
+        "laravel/tinker": "^2.5",
+        "laravel/ui": "2.x"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
@@ -34,7 +35,8 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "app/"
+            "App\\": "app/",
+            "LaravelFrontendPresets\\ArgonPreset\\": "presets/argon/src"
         },
         "classmap": [
             "database/seeds",
@@ -43,7 +45,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Tests\\": "tests/",
+            "LaravelFrontendPresets\\ArgonPreset\\": "presets/argon/src"
         }
     },
     "minimum-stability": "dev",
